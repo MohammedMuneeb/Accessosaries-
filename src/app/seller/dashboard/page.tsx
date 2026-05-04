@@ -91,7 +91,7 @@ export default async function SellerDashboard() {
                   </tr>
                 </thead>
                 <tbody className="divide-y divide-border/20">
-                  {products.map((p) => (
+                  {products.map((p: any) => (
                     <tr key={p.id} className="hover:bg-secondary/20 transition-colors">
                       <td className="px-6 py-4">
                         <div className="flex items-center gap-3">
