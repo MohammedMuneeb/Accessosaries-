@@ -1,5 +1,4 @@
 @import "tailwindcss";
-
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
@@ -10,7 +9,7 @@
   --color-secondary: var(--secondary);
   --color-accent: var(--accent);
   --color-border: var(--border);
-  
+
   --radius-xl: 1rem;
   --radius-2xl: 1.5rem;
 }
@@ -40,9 +39,10 @@
   * {
     @apply border-border outline-none;
   }
+
   body {
     @apply bg-background text-foreground antialiased selection:bg-primary/20;
-    background-image: 
+    background-image:
       radial-gradient(at 0% 0%, oklch(var(--primary) / 0.05) 0px, transparent 50%),
       radial-gradient(at 100% 100%, oklch(var(--accent) / 0.05) 0px, transparent 50%);
     background-attachment: fixed;
@@ -58,9 +58,17 @@
 }
 
 @keyframes float {
-  0% { transform: translateY(0px); }
-  50% { transform: translateY(-10px); }
-  100% { transform: translateY(0px); }
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
 }
 
 .animate-float {

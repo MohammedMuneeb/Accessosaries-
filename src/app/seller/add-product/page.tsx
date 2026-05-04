@@ -1,6 +1,6 @@
-"use client";
-
+"use client"; 
 import { useState } from "react";
+
 import { useRouter } from "next/navigation";
 import { Sparkles, Package, DollarSign, Tag, Image as ImageIcon, ChevronLeft } from "lucide-react";
 import Link from "next/link";

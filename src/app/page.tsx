@@ -10,26 +10,28 @@ export default function Home() {
   ];
 
   return (
-    <div className="flex flex-col min-h-screen">
+
+    <div className="flex flex-col min-h-screen ">
       {/* Hero Section */}
       <section className="relative pt-32 pb-20 px-8 overflow-hidden">
         {/* Background Decorative Elements */}
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[1000px] h-[600px] bg-primary/5 blur-[120px] rounded-full pointer-events-none" />
-        
+
         <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center relative">
           <div className="space-y-8 text-left">
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-secondary text-primary text-xs font-bold border border-primary/10 animate-fade-in">
+
               <Sparkles className="w-3 h-3" />
-              <span>Premium Mobile Accessories Marketplace</span>
+              <span>Premium Mobile Accessories Marketplace</span >
             </div>
 
             <h1 className="text-6xl md:text-7xl font-black tracking-tighter leading-[1.1]">
               Elevate Your <span className="text-gradient">Mobile</span> <br />
               Experience.
-            </h1>
-            
+            </h1 >
             <p className="text-xl text-muted-foreground max-w-xl leading-relaxed">
-              Discover a curated collection of high-end cases, chargers, and audio gear. 
+
+              Discover a curated collection of high-end cases, chargers, and audio gear.
               Buy from trusted sellers or start selling your own accessories today.
             </p>
 
@@ -46,9 +48,9 @@ export default function Home() {
           <div className="relative hidden lg:block">
             <div className="absolute -inset-4 bg-gradient-to-tr from-primary/20 to-accent/20 blur-3xl rounded-full animate-pulse" />
             <div className="relative glass p-4 rounded-[2.5rem] border-white/20">
-              <img 
-                src="https://images.unsplash.com/photo-1603302576837-37561b2e2302?auto=format&fit=crop&q=80&w=1000" 
-                alt="Premium Accessories" 
+              <img
+                src="https://images.unsplash.com/photo-1603302576837-37561b2e2302?auto=format&fit=crop&q=80&w=1000"
+                alt="Premium Accessories"
                 className="rounded-[2rem] w-full h-[500px] object-cover"
               />
               <div className="absolute -bottom-6 -left-6 glass p-6 rounded-3xl animate-float">
@@ -79,8 +81,8 @@ export default function Home() {
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {categories.map((cat, i) => (
-              <Link 
-                key={i} 
+              <Link
+                key={i}
                 href={`/shop?category=${cat.name.toLowerCase()}`}
                 className="glass p-8 rounded-3xl group hover:border-primary/30 transition-all hover:scale-[1.02]"
               >
